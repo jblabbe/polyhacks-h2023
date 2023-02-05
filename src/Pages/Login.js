@@ -19,7 +19,8 @@ export function Login(props) {
   return (
     <>
     <Box className="background-gradient" sx={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100%", gap: "1em", padding: "0.5em"}}>
-      <label className="name-input-text">Enter your name</label>
+      <h1>Welcome!</h1>
+      <label className="name-input-text">Please enter your name</label>
       <input className='name-input-login' type="text" onChange={(e) => userName = e.target.value}></input>
       { showError ? <p sx= {{margin:"0"}}>User not found. Please sign up before logging in.</p> : null }
       <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "1em", padding: "0.5em"}}>
