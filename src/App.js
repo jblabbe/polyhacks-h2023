@@ -11,7 +11,7 @@ export function App() {
   const [userName, setUserName] = useState("Default User");
   const [mood, setMood] = useState("");
   const [baselineStats, setBaseline] = useState([]);
-
+  const [sliders, setSliders] = useState([]);
 
   return (
     <div>
@@ -20,8 +20,8 @@ export function App() {
         {status === "login" && <Login stateChanger={setStatus} userNameChanger={setUserName}></Login>}
         {status === "createForm" && <CreateForm stateChanger={setStatus} userNameChanger={setUserName} userNameValue={userName} baselineChanger={setBaseline}></CreateForm>}
         {status === "moodSmiley" && <MoodSmiley stateChanger={setStatus} moodStateChanger={setMood}></MoodSmiley>}
-        {status === "moodForm" && <MoodForm stateChanger={setStatus} mood={mood}></MoodForm>}
-        {status === "dashboard" && <Dashboard stateChanger={setStatus}></Dashboard>}
+        {status === "moodForm" && <MoodForm stateChanger={setStatus} mood={mood} sliderChanger={setSliders}></MoodForm>}
+        {status === "dashboard" && <Dashboard stateChanger={setStatus} sliders={sliders}></Dashboard>}
       </Box>
     </div>
   )
