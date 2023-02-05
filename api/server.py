@@ -1,25 +1,36 @@
-import time
-from flask import Flask
-from flask import request
+import uuid
+from http import HTTPStatus
+from flask import Flask, request
 import databaseService as db
 
 app = Flask(__name__)
 
 @app.route('/user/<id>')
 def getUser(id):
-    return { 'user': db.getUser(id) }
+    return str(db.getUser(id))
 
 @app.route('/user', methods=['POST'])
 def createUser():
-    # db.createUser(request.json)
-    return { 'user': "" }
+    contentType = request.headers.get('Content-Type')
+    if (contentType == 'application/json'):
+        user = request.json
+        id = str(uuid.uuid1())
+        user['id'] = id
+        # set userId in local storage
+        db.createUser(user)
+        return HTTPStatus.CREATED
+    return HTTPStatus.BAD_REQUEST
 
-@app.route('/scores/<user>', methods=['PATCH'])
-def updateHistory(user):
-    # mongo service to add score to the user
-    return { 'user': "" }
+@app.route('/scores/<id>', methods=['PATCH'])
+def updateHistory(id):
+    db.updateHistory(id, request.json)
+    return HTTPStatus.OK
 
-@app.route('/scores/<user>')
-def getHistory(user):
-    # mongo service to get scores for the user
-    return { 'user': "" }
+@app.route('/scores/<id>')
+def getHistory(id):
+    return str(db.getHistory(id))
+
+@app.route('/baseline/<id>', methods=['PATCH'])
+def updateBaseline(id):
+    db.updateBaseline(id, request.json)
+    return HTTPStatus.OK
