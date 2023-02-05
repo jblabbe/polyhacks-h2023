@@ -10,16 +10,21 @@ export function MoodSmiley(props) {
         window.location.replace(".")
     }
 
+    function selectMood(moodDiv) {
+        props.moodStateChanger(moodDiv.target.id);
+        props.stateChanger("moodForm")
+    }
+
     return (
         <>
             <Box sx={{ display: "flex", justifyContent: "space-around", height: "100%", gap: "1em", padding: "0.5em" }}>
-                <Box className="bg-primary" sx={{flexGrow: "1", cursor: "pointer"}} onClick={() => props.stateChanger("moodForm")}>
+                <Box id="good" className="bg-primary" sx={{flexGrow: "1", cursor: "pointer"}} onClick={(div) => selectMood(div)}>
                 A
                 </Box>
-                <Box className="bg-primary" sx={{flexGrow: "1", cursor: "pointer"}} onClick={() => props.stateChanger("moodForm")}>
+                <Box id="neutral" className="bg-primary" sx={{flexGrow: "1", cursor: "pointer"}} onClick={(div) => selectMood(div)}>
                 B
                 </Box>
-                <Box className="bg-primary" sx={{flexGrow: "1", cursor: "pointer"}} onClick={() => props.stateChanger("moodForm")}>
+                <Box id="bad" className="bg-primary" sx={{flexGrow: "1", cursor: "pointer"}} onClick={(div) => selectMood(div)}>
                 C
                 </Box>
             </Box>
