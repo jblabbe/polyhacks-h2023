@@ -9,13 +9,17 @@ export function App() {
 
   const [status, setStatus] = useState("moodSmiley");
   const [userName, setUserName] = useState("Default User");
+  const [mood, setMood] = useState("");
+  const [sliders, setSliders] = useState([]);
 
   return (
     <div>
       <Header className="bg-primary" padding="1em" stateChanger={setStatus} userName={userName} />
-        {status === "moodSmiley" && <MoodSmiley stateChanger={setStatus}></MoodSmiley>}
-        {status === "moodForm" && <MoodForm stateChanger={setStatus}></MoodForm>}
-        {status === "dashboard" && <Dashboard stateChanger={setStatus}></Dashboard>}
+      <Box sx={{height: "90%"}}>
+        {status === "moodSmiley" && <MoodSmiley stateChanger={setStatus} moodStateChanger={setMood}></MoodSmiley>}
+        {status === "moodForm" && <MoodForm stateChanger={setStatus} mood={mood} sliderChanger={setSliders}></MoodForm>}
+        {status === "dashboard" && <Dashboard stateChanger={setStatus} sliders={sliders}></Dashboard>}
+      </Box>
     </div>
   )
 }
