@@ -13,11 +13,9 @@ export function App() {
   return (
     <div>
       <Header className="bg-primary" padding="1em" stateChanger={setStatus} userName={userName} />
-      <Box sx={{height: "90%"}}>
         {status === "moodSmiley" && <MoodSmiley stateChanger={setStatus}></MoodSmiley>}
         {status === "moodForm" && <MoodForm stateChanger={setStatus}></MoodForm>}
         {status === "dashboard" && <Dashboard stateChanger={setStatus}></Dashboard>}
-      </Box>
     </div>
   )
 }

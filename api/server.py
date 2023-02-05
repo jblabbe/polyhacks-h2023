@@ -2,8 +2,9 @@ import uuid
 from http import HTTPStatus
 from flask import Flask, request
 import databaseService as db
-
+from flask_cors import CORS
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/user/<id>')
 def getUser(id):
