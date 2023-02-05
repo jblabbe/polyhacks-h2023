@@ -18,6 +18,7 @@ export function App() {
         {status === "moodSmiley" && <MoodSmiley stateChanger={setStatus} moodStateChanger={setMood}></MoodSmiley>}
         {status === "moodForm" && <MoodForm stateChanger={setStatus} mood={mood}></MoodForm>}
         {status === "dashboard" && <Dashboard stateChanger={setStatus}></Dashboard>}
+      </Box>
     </div>
   )
 }
