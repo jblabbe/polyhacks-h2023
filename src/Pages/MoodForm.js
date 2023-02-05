@@ -20,14 +20,21 @@ export function MoodForm(props) {
   function selectSliders() {
     props.sliderChanger([sleepValue, exerciseValue, screenTimeValue]);
     let id = "11e416b1-a52d-11ed-a0db-ee2e98f108a9";
-    processData(id, props.mood, sleepValue, exerciseValue, screenTimeValue);
+    let mood = 1;
+    if (props.mood === "bad") {
+      mood = -1;
+    }
+    else if (props.mood === "neutral") {
+      mood = 0;
+    }
+    processData(id, mood, sleepValue, exerciseValue, screenTimeValue);
     props.stateChanger("dashboard");
   }
 
   function processData(id, mood, sleep, exercise, screenTime) {
     const body = JSON.stringify({
       "date": new Date().toLocaleDateString('fr-CA'),
-      "mood": 1,
+      "mood": mood,
       "daily": {
         "sleep": sleep,
         "exercise": exercise,
@@ -52,7 +59,7 @@ export function MoodForm(props) {
       <Box className='slide-container' sx={{display: "flex", flexDirection: "column", padding: "1em", alignItems: "center", justifyContent: "space-between", height: "80%"}}>
         <Box sx={{width: sliderWidth}}>
           <p>How much sleep did you get last night ?</p>
-          <Slider value={sleepValue} onChange={changeSleepValue}></Slider>
+          <Slider value={sleepValue} onChange={changeSleepValue} min={0} defaultValue={sleepValue}></Slider>
         </Box>
         <Box sx={{width: sliderWidth, marginTop: gap}}>
           <p>How much did you exercise today ?</p>
@@ -60,7 +67,7 @@ export function MoodForm(props) {
         </Box>
         <Box sx={{width: sliderWidth, marginTop: gap}}>
           <p>How much time did you spend looking at a screen today ?</p>
-          <Slider value={screenTimeValue} onChange={changeScreenTimeValue}></Slider>
+          <Slider value={screenTimeValue} onChange={changeScreenTimeValue} max={20} min={0}></Slider>
         </Box>
       </Box>
 
