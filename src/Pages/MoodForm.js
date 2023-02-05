@@ -48,8 +48,8 @@ export function MoodForm(props) {
   }
 
   return (
-    <div height="100%" >
-      <Box sx={{display: "flex", flexDirection: "column", padding: "1em", alignItems: "center", justifyContent: "space-between", height: "80%"}}>
+    <div className='slide-container'>
+      <Box className='slide-container' sx={{display: "flex", flexDirection: "column", padding: "1em", alignItems: "center", justifyContent: "space-between", height: "80%"}}>
         <Box sx={{width: sliderWidth, marginTop: gap}}>
           <Slider value={sleepValue} onChange={changeSleepValue}></Slider>
         </Box>
@@ -61,9 +61,9 @@ export function MoodForm(props) {
         </Box>
       </Box>
 
-      <Div className="d-flex justify-content-between p-2">
-        <Button variant="contained" color="success" onClick={() => props.stateChanger("moodSmiley")}>Back</Button>
-        <Button variant="contained" color="success" onClick={() => { selectSliders(); }}>Next</Button>
+      <Div className="d-flex p-2 slider-buttons">
+        <Button className='slider-btn' variant="contained" onClick={() => props.stateChanger("moodSmiley")}>Back</Button>
+        <Button className='slider-btn' variant="contained" onClick={() => { selectSliders(); }}>Next</Button>
       </Div>
     </div>
   )
