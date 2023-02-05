@@ -1,5 +1,5 @@
 import uuid
-from http import HTTPStatus
+# from http import HTTPStatus
 from flask import Flask, request
 import databaseService as db
 
@@ -11,26 +11,15 @@ def getUser(id):
 
 @app.route('/user', methods=['POST'])
 def createUser():
-    contentType = request.headers.get('Content-Type')
-    if (contentType == 'application/json'):
-        user = request.json
-        id = str(uuid.uuid1())
-        user['id'] = id
-        # set userId in local storage
-        db.createUser(user)
-        return HTTPStatus.CREATED
-    return HTTPStatus.BAD_REQUEST
+    user = request.json
+    id = str(uuid.uuid1())
+    user['id'] = id
+    # set userId in local storage
+    db.createUser(user)
+    return "201"
 
-@app.route('/scores/<id>', methods=['PATCH'])
-def updateHistory(id):
-    db.updateHistory(id, request.json)
-    return HTTPStatus.OK
 
-@app.route('/scores/<id>')
-def getHistory(id):
-    return str(db.getHistory(id))
-
-@app.route('/baseline/<id>', methods=['PATCH'])
-def updateBaseline(id):
-    db.updateBaseline(id, request.json)
-    return HTTPStatus.OK
+@app.route('/user/<id>', methods=['PATCH'])
+def updateUser(id):
+    db.updateUser(id, request.json)
+    return "200"

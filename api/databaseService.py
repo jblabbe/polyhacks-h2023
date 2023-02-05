@@ -6,17 +6,17 @@ client = pymongo.MongoClient(f"mongodb+srv://{user}:{password}@cluster0.4pbnql3.
 
 users = client["moody"].get_collection("users")
 
-def getUser(user_id):
-    return users.find_one({ "id": user_id })
+def getUser(id):
+    return users.find_one({ "id": id })
 
 def createUser(user):
     users.insert_one(user)
 
-def updateHistory(id, data):
-    users.update_one({ "id": id }, { "$push": { "history": data } })
+def updateUser(id, user):
+    users.replace_one({ "id": id }, user)
 
-def getHistory(id):
-    return users.find_one({ "id": id }, { "history": 1 })
+# def getHistory(id):
+#     return users.find_one({ "id": id }, { "history": 1 })
 
-def updateBaseline(id, data):
-    return users.update_one({ "id": id }, { "$set": { "baseline": data } })
+# def updateBaseline(id, data):
+#     return users.update_one({ "id": id }, { "$set": { "baseline": data } })
