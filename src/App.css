@@ -81,3 +81,7 @@ select.name-input-login {
 textarea:focus, input:focus{
     outline: none;
 }
+
+.avatar {
+  color: white;
+}
