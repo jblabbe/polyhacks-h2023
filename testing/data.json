@@ -1,112 +1,1402 @@
 [
     {
-        "name": "Benjamin Piché",
-        "baseline": {
-            "sleep": 420,
-            "exercise": 60,
-            "screentime": 180
+      "name": "Wallace Clayton",
+      "baseline": {
+        "sleep": 300,
+        "exercise": 120,
+        "screentime": 180
+      },
+      "history": [
+        {
+          "date": "2023-02-03",
+          "mood": -1,
+          "daily": {
+            "sleep": 226,
+            "exercise": 73,
+            "screentime": 97
+          }
         },
-        "history": [
-            {
-                "date": "2023-02-04",
-                "mood": 1,
-                "daily": {
-                    "sleep": 450,
-                    "exercise": 90,
-                    "screentime": 240
-                }
-            },
-            {
-                "date": "2023-02-03",
-                "mood": 1,
-                "daily": {
-                    "sleep": 390,
-                    "exercise": 90,
-                    "screentime": 180
-                }
-            },
-            {
-                "date": "2023-02-02",
-                "mood": 0,
-                "daily": {
-                    "sleep": 360,
-                    "exercise": 60,
-                    "screentime": 90
-                }
-            },
-            {
-                "date": "2023-02-01",
-                "mood": -1,
-                "daily": {
-                    "sleep": 420,
-                    "exercise": 0,
-                    "screentime": 240
-                }
-            },
-            {
-                "date": "2023-01-31",
-                "mood": -1,
-                "daily": {
-                    "sleep": 360,
-                    "exercise": 30,
-                    "screentime": 270
-                }
-            }
-        ]
+        {
+          "date": "2023-03-02",
+          "mood": 0,
+          "daily": {
+            "sleep": 219,
+            "exercise": 246,
+            "screentime": 215
+          }
+        },
+        {
+          "date": "2023-02-06",
+          "mood": -1,
+          "daily": {
+            "sleep": 333,
+            "exercise": 287,
+            "screentime": 216
+          }
+        },
+        {
+          "date": "2023-02-27",
+          "mood": -1,
+          "daily": {
+            "sleep": 189,
+            "exercise": 295,
+            "screentime": 135
+          }
+        },
+        {
+          "date": "2023-02-08",
+          "mood": 0,
+          "daily": {
+            "sleep": 334,
+            "exercise": 42,
+            "screentime": 198
+          }
+        },
+        {
+          "date": "2023-02-27",
+          "mood": 1,
+          "daily": {
+            "sleep": 225,
+            "exercise": 145,
+            "screentime": 221
+          }
+        },
+        {
+          "date": "2023-02-08",
+          "mood": 1,
+          "daily": {
+            "sleep": 326,
+            "exercise": 7,
+            "screentime": 247
+          }
+        },
+        {
+          "date": "2023-02-13",
+          "mood": -1,
+          "daily": {
+            "sleep": 253,
+            "exercise": 197,
+            "screentime": 113
+          }
+        },
+        {
+          "date": "2023-02-27",
+          "mood": -1,
+          "daily": {
+            "sleep": 262,
+            "exercise": 11,
+            "screentime": 108
+          }
+        },
+        {
+          "date": "2023-03-02",
+          "mood": 1,
+          "daily": {
+            "sleep": 211,
+            "exercise": 71,
+            "screentime": 194
+          }
+        },
+        {
+          "date": "2023-02-26",
+          "mood": -1,
+          "daily": {
+            "sleep": 246,
+            "exercise": 241,
+            "screentime": 246
+          }
+        },
+        {
+          "date": "2023-02-27",
+          "mood": 0,
+          "daily": {
+            "sleep": 355,
+            "exercise": 199,
+            "screentime": 141
+          }
+        },
+        {
+          "date": "2023-02-16",
+          "mood": 0,
+          "daily": {
+            "sleep": 190,
+            "exercise": 91,
+            "screentime": 159
+          }
+        },
+        {
+          "date": "2023-02-06",
+          "mood": -1,
+          "daily": {
+            "sleep": 278,
+            "exercise": 290,
+            "screentime": 213
+          }
+        },
+        {
+          "date": "2023-02-21",
+          "mood": 0,
+          "daily": {
+            "sleep": 390,
+            "exercise": 170,
+            "screentime": 186
+          }
+        },
+        {
+          "date": "2023-02-02",
+          "mood": 0,
+          "daily": {
+            "sleep": 240,
+            "exercise": 243,
+            "screentime": 162
+          }
+        },
+        {
+          "date": "2023-03-02",
+          "mood": 0,
+          "daily": {
+            "sleep": 289,
+            "exercise": 286,
+            "screentime": 96
+          }
+        },
+        {
+          "date": "2023-02-28",
+          "mood": 0,
+          "daily": {
+            "sleep": 398,
+            "exercise": 115,
+            "screentime": 146
+          }
+        },
+        {
+          "date": "2023-02-15",
+          "mood": 1,
+          "daily": {
+            "sleep": 280,
+            "exercise": 55,
+            "screentime": 228
+          }
+        },
+        {
+          "date": "2023-02-16",
+          "mood": -1,
+          "daily": {
+            "sleep": 266,
+            "exercise": 236,
+            "screentime": 246
+          }
+        },
+        {
+          "date": "2023-02-23",
+          "mood": -1,
+          "daily": {
+            "sleep": 369,
+            "exercise": 291,
+            "screentime": 216
+          }
+        },
+        {
+          "date": "2023-02-14",
+          "mood": -1,
+          "daily": {
+            "sleep": 405,
+            "exercise": 59,
+            "screentime": 152
+          }
+        },
+        {
+          "date": "2023-02-02",
+          "mood": 1,
+          "daily": {
+            "sleep": 259,
+            "exercise": 58,
+            "screentime": 257
+          }
+        },
+        {
+          "date": "2023-03-01",
+          "mood": 1,
+          "daily": {
+            "sleep": 300,
+            "exercise": 300,
+            "screentime": 226
+          }
+        },
+        {
+          "date": "2023-02-16",
+          "mood": 0,
+          "daily": {
+            "sleep": 317,
+            "exercise": 232,
+            "screentime": 233
+          }
+        },
+        {
+          "date": "2023-02-05",
+          "mood": 0,
+          "daily": {
+            "sleep": 357,
+            "exercise": 13,
+            "screentime": 217
+          }
+        },
+        {
+          "date": "2023-02-12",
+          "mood": 1,
+          "daily": {
+            "sleep": 376,
+            "exercise": 29,
+            "screentime": 223
+          }
+        },
+        {
+          "date": "2023-02-25",
+          "mood": -1,
+          "daily": {
+            "sleep": 210,
+            "exercise": 254,
+            "screentime": 199
+          }
+        },
+        {
+          "date": "2023-02-27",
+          "mood": -1,
+          "daily": {
+            "sleep": 399,
+            "exercise": 40,
+            "screentime": 118
+          }
+        },
+        {
+          "date": "2023-02-16",
+          "mood": -1,
+          "daily": {
+            "sleep": 194,
+            "exercise": 151,
+            "screentime": 126
+          }
+        }
+      ]
     },
     {
-        "name": "Jean-Benoit Labbé",
-        "baseline": {
-            "sleep": 420,
-            "exercise": 60,
-            "screentime": 180
+      "name": "Elise Kramer",
+      "baseline": {
+        "sleep": 480,
+        "exercise": 60,
+        "screentime": 180
+      },
+      "history": [
+        {
+          "date": "2023-02-22",
+          "mood": 0,
+          "daily": {
+            "sleep": 577,
+            "exercise": 114,
+            "screentime": 158
+          }
         },
-        "history": [
-            {
-                "date": "2023-02-04",
-                "mood": 1,
-                "daily": {
-                    "sleep": 450,
-                    "exercise": 90,
-                    "screentime": 240
-                }
-            },
-            {
-                "date": "2023-02-03",
-                "mood": 1,
-                "daily": {
-                    "sleep": 390,
-                    "exercise": 90,
-                    "screentime": 180
-                }
-            },
-            {
-                "date": "2023-02-02",
-                "mood": 0,
-                "daily": {
-                    "sleep": 360,
-                    "exercise": 60,
-                    "screentime": 90
-                }
-            },
-            {
-                "date": "2023-02-01",
-                "mood": -1,
-                "daily": {
-                    "sleep": 420,
-                    "exercise": 0,
-                    "screentime": 240
-                }
-            },
-            {
-                "date": "2023-01-31",
-                "mood": -1,
-                "daily": {
-                    "sleep": 360,
-                    "exercise": 30,
-                    "screentime": 270
-                }
-            }
-        ]
+        {
+          "date": "2023-02-19",
+          "mood": -1,
+          "daily": {
+            "sleep": 375,
+            "exercise": 7,
+            "screentime": 128
+          }
+        },
+        {
+          "date": "2023-02-17",
+          "mood": -1,
+          "daily": {
+            "sleep": 373,
+            "exercise": 78,
+            "screentime": 243
+          }
+        },
+        {
+          "date": "2023-02-23",
+          "mood": 1,
+          "daily": {
+            "sleep": 457,
+            "exercise": 21,
+            "screentime": 110
+          }
+        },
+        {
+          "date": "2023-02-28",
+          "mood": 1,
+          "daily": {
+            "sleep": 540,
+            "exercise": 79,
+            "screentime": 154
+          }
+        },
+        {
+          "date": "2023-02-19",
+          "mood": -1,
+          "daily": {
+            "sleep": 452,
+            "exercise": 73,
+            "screentime": 270
+          }
+        },
+        {
+          "date": "2023-02-20",
+          "mood": 1,
+          "daily": {
+            "sleep": 460,
+            "exercise": 11,
+            "screentime": 231
+          }
+        },
+        {
+          "date": "2023-02-19",
+          "mood": 1,
+          "daily": {
+            "sleep": 599,
+            "exercise": 65,
+            "screentime": 264
+          }
+        },
+        {
+          "date": "2023-02-22",
+          "mood": -1,
+          "daily": {
+            "sleep": 543,
+            "exercise": 78,
+            "screentime": 197
+          }
+        },
+        {
+          "date": "2023-02-26",
+          "mood": -1,
+          "daily": {
+            "sleep": 566,
+            "exercise": 21,
+            "screentime": 157
+          }
+        },
+        {
+          "date": "2023-03-01",
+          "mood": 0,
+          "daily": {
+            "sleep": 450,
+            "exercise": 55,
+            "screentime": 140
+          }
+        },
+        {
+          "date": "2023-02-28",
+          "mood": -1,
+          "daily": {
+            "sleep": 570,
+            "exercise": 79,
+            "screentime": 143
+          }
+        },
+        {
+          "date": "2023-02-26",
+          "mood": 0,
+          "daily": {
+            "sleep": 444,
+            "exercise": 46,
+            "screentime": 129
+          }
+        },
+        {
+          "date": "2023-02-05",
+          "mood": -1,
+          "daily": {
+            "sleep": 540,
+            "exercise": 68,
+            "screentime": 185
+          }
+        },
+        {
+          "date": "2023-02-18",
+          "mood": -1,
+          "daily": {
+            "sleep": 564,
+            "exercise": 58,
+            "screentime": 183
+          }
+        },
+        {
+          "date": "2023-03-01",
+          "mood": 0,
+          "daily": {
+            "sleep": 431,
+            "exercise": 59,
+            "screentime": 94
+          }
+        },
+        {
+          "date": "2023-03-01",
+          "mood": -1,
+          "daily": {
+            "sleep": 363,
+            "exercise": 94,
+            "screentime": 102
+          }
+        },
+        {
+          "date": "2023-02-13",
+          "mood": -1,
+          "daily": {
+            "sleep": 391,
+            "exercise": 58,
+            "screentime": 218
+          }
+        },
+        {
+          "date": "2023-02-10",
+          "mood": 1,
+          "daily": {
+            "sleep": 468,
+            "exercise": 10,
+            "screentime": 252
+          }
+        },
+        {
+          "date": "2023-02-05",
+          "mood": 0,
+          "daily": {
+            "sleep": 473,
+            "exercise": 55,
+            "screentime": 97
+          }
+        },
+        {
+          "date": "2023-02-26",
+          "mood": 1,
+          "daily": {
+            "sleep": 529,
+            "exercise": 57,
+            "screentime": 118
+          }
+        },
+        {
+          "date": "2023-02-06",
+          "mood": 1,
+          "daily": {
+            "sleep": 528,
+            "exercise": 61,
+            "screentime": 138
+          }
+        },
+        {
+          "date": "2023-02-11",
+          "mood": 1,
+          "daily": {
+            "sleep": 436,
+            "exercise": 107,
+            "screentime": 97
+          }
+        },
+        {
+          "date": "2023-02-07",
+          "mood": 0,
+          "daily": {
+            "sleep": 378,
+            "exercise": 66,
+            "screentime": 141
+          }
+        },
+        {
+          "date": "2023-02-01",
+          "mood": -1,
+          "daily": {
+            "sleep": 579,
+            "exercise": 12,
+            "screentime": 148
+          }
+        },
+        {
+          "date": "2023-02-18",
+          "mood": -1,
+          "daily": {
+            "sleep": 445,
+            "exercise": 78,
+            "screentime": 267
+          }
+        },
+        {
+          "date": "2023-02-03",
+          "mood": 0,
+          "daily": {
+            "sleep": 560,
+            "exercise": 52,
+            "screentime": 131
+          }
+        },
+        {
+          "date": "2023-02-08",
+          "mood": 1,
+          "daily": {
+            "sleep": 524,
+            "exercise": 104,
+            "screentime": 169
+          }
+        },
+        {
+          "date": "2023-02-23",
+          "mood": 1,
+          "daily": {
+            "sleep": 399,
+            "exercise": 39,
+            "screentime": 126
+          }
+        },
+        {
+          "date": "2023-02-14",
+          "mood": 1,
+          "daily": {
+            "sleep": 371,
+            "exercise": 82,
+            "screentime": 177
+          }
+        }
+      ]
+    },
+    {
+      "name": "Rivas Spence",
+      "baseline": {
+        "sleep": 540,
+        "exercise": 30,
+        "screentime": 90
+      },
+      "history": [
+        {
+          "date": "2023-02-02",
+          "mood": -1,
+          "daily": {
+            "sleep": 499,
+            "exercise": 41,
+            "screentime": 14
+          }
+        },
+        {
+          "date": "2023-02-17",
+          "mood": -1,
+          "daily": {
+            "sleep": 629,
+            "exercise": 73,
+            "screentime": 123
+          }
+        },
+        {
+          "date": "2023-02-18",
+          "mood": 1,
+          "daily": {
+            "sleep": 493,
+            "exercise": 6,
+            "screentime": 87
+          }
+        },
+        {
+          "date": "2023-02-22",
+          "mood": 0,
+          "daily": {
+            "sleep": 482,
+            "exercise": 13,
+            "screentime": 86
+          }
+        },
+        {
+          "date": "2023-02-12",
+          "mood": -1,
+          "daily": {
+            "sleep": 642,
+            "exercise": 27,
+            "screentime": 25
+          }
+        },
+        {
+          "date": "2023-02-02",
+          "mood": 1,
+          "daily": {
+            "sleep": 527,
+            "exercise": 55,
+            "screentime": 170
+          }
+        },
+        {
+          "date": "2023-02-27",
+          "mood": 0,
+          "daily": {
+            "sleep": 636,
+            "exercise": 38,
+            "screentime": 59
+          }
+        },
+        {
+          "date": "2023-02-10",
+          "mood": 1,
+          "daily": {
+            "sleep": 643,
+            "exercise": 80,
+            "screentime": 84
+          }
+        },
+        {
+          "date": "2023-02-09",
+          "mood": -1,
+          "daily": {
+            "sleep": 530,
+            "exercise": 73,
+            "screentime": 124
+          }
+        },
+        {
+          "date": "2023-02-08",
+          "mood": 0,
+          "daily": {
+            "sleep": 642,
+            "exercise": 26,
+            "screentime": 86
+          }
+        },
+        {
+          "date": "2023-02-23",
+          "mood": 0,
+          "daily": {
+            "sleep": 554,
+            "exercise": 67,
+            "screentime": 100
+          }
+        },
+        {
+          "date": "2023-02-12",
+          "mood": 1,
+          "daily": {
+            "sleep": 437,
+            "exercise": 51,
+            "screentime": 170
+          }
+        },
+        {
+          "date": "2023-02-20",
+          "mood": -1,
+          "daily": {
+            "sleep": 641,
+            "exercise": 46,
+            "screentime": 30
+          }
+        },
+        {
+          "date": "2023-02-01",
+          "mood": 1,
+          "daily": {
+            "sleep": 559,
+            "exercise": 71,
+            "screentime": 164
+          }
+        },
+        {
+          "date": "2023-02-01",
+          "mood": 0,
+          "daily": {
+            "sleep": 502,
+            "exercise": 85,
+            "screentime": 149
+          }
+        },
+        {
+          "date": "2023-02-18",
+          "mood": 0,
+          "daily": {
+            "sleep": 556,
+            "exercise": 71,
+            "screentime": 146
+          }
+        },
+        {
+          "date": "2023-02-02",
+          "mood": 0,
+          "daily": {
+            "sleep": 439,
+            "exercise": 76,
+            "screentime": 128
+          }
+        },
+        {
+          "date": "2023-02-10",
+          "mood": -1,
+          "daily": {
+            "sleep": 611,
+            "exercise": 77,
+            "screentime": 51
+          }
+        },
+        {
+          "date": "2023-02-16",
+          "mood": 0,
+          "daily": {
+            "sleep": 619,
+            "exercise": 39,
+            "screentime": 76
+          }
+        },
+        {
+          "date": "2023-02-15",
+          "mood": -1,
+          "daily": {
+            "sleep": 485,
+            "exercise": 59,
+            "screentime": 57
+          }
+        },
+        {
+          "date": "2023-02-12",
+          "mood": -1,
+          "daily": {
+            "sleep": 460,
+            "exercise": 50,
+            "screentime": 156
+          }
+        },
+        {
+          "date": "2023-02-14",
+          "mood": -1,
+          "daily": {
+            "sleep": 442,
+            "exercise": 44,
+            "screentime": 107
+          }
+        },
+        {
+          "date": "2023-02-27",
+          "mood": 1,
+          "daily": {
+            "sleep": 654,
+            "exercise": 15,
+            "screentime": 119
+          }
+        },
+        {
+          "date": "2023-02-18",
+          "mood": 1,
+          "daily": {
+            "sleep": 455,
+            "exercise": 50,
+            "screentime": 31
+          }
+        },
+        {
+          "date": "2023-02-20",
+          "mood": -1,
+          "daily": {
+            "sleep": 599,
+            "exercise": 23,
+            "screentime": 20
+          }
+        },
+        {
+          "date": "2023-02-03",
+          "mood": -1,
+          "daily": {
+            "sleep": 531,
+            "exercise": 70,
+            "screentime": 41
+          }
+        },
+        {
+          "date": "2023-03-01",
+          "mood": -1,
+          "daily": {
+            "sleep": 629,
+            "exercise": 42,
+            "screentime": 22
+          }
+        },
+        {
+          "date": "2023-02-25",
+          "mood": 0,
+          "daily": {
+            "sleep": 541,
+            "exercise": 71,
+            "screentime": 99
+          }
+        },
+        {
+          "date": "2023-02-11",
+          "mood": 0,
+          "daily": {
+            "sleep": 607,
+            "exercise": 20,
+            "screentime": 39
+          }
+        },
+        {
+          "date": "2023-02-27",
+          "mood": -1,
+          "daily": {
+            "sleep": 492,
+            "exercise": 54,
+            "screentime": 71
+          }
+        }
+      ]
+    },
+    {
+      "name": "Faulkner Logan",
+      "baseline": {
+        "sleep": 240,
+        "exercise": 150,
+        "screentime": 240
+      },
+      "history": [
+        {
+          "date": "2023-02-28",
+          "mood": 0,
+          "daily": {
+            "sleep": 138,
+            "exercise": 116,
+            "screentime": 277
+          }
+        },
+        {
+          "date": "2023-02-21",
+          "mood": -1,
+          "daily": {
+            "sleep": 341,
+            "exercise": 125,
+            "screentime": 231
+          }
+        },
+        {
+          "date": "2023-02-06",
+          "mood": 0,
+          "daily": {
+            "sleep": 352,
+            "exercise": 140,
+            "screentime": 230
+          }
+        },
+        {
+          "date": "2023-02-18",
+          "mood": 0,
+          "daily": {
+            "sleep": 245,
+            "exercise": 150,
+            "screentime": 310
+          }
+        },
+        {
+          "date": "2023-02-12",
+          "mood": 1,
+          "daily": {
+            "sleep": 232,
+            "exercise": 93,
+            "screentime": 193
+          }
+        },
+        {
+          "date": "2023-02-15",
+          "mood": -1,
+          "daily": {
+            "sleep": 276,
+            "exercise": 150,
+            "screentime": 309
+          }
+        },
+        {
+          "date": "2023-02-27",
+          "mood": 1,
+          "daily": {
+            "sleep": 143,
+            "exercise": 135,
+            "screentime": 330
+          }
+        },
+        {
+          "date": "2023-02-03",
+          "mood": 1,
+          "daily": {
+            "sleep": 326,
+            "exercise": 93,
+            "screentime": 224
+          }
+        },
+        {
+          "date": "2023-02-16",
+          "mood": 0,
+          "daily": {
+            "sleep": 172,
+            "exercise": 168,
+            "screentime": 201
+          }
+        },
+        {
+          "date": "2023-03-01",
+          "mood": 1,
+          "daily": {
+            "sleep": 305,
+            "exercise": 113,
+            "screentime": 280
+          }
+        },
+        {
+          "date": "2023-02-10",
+          "mood": 0,
+          "daily": {
+            "sleep": 129,
+            "exercise": 206,
+            "screentime": 163
+          }
+        },
+        {
+          "date": "2023-02-01",
+          "mood": 0,
+          "daily": {
+            "sleep": 320,
+            "exercise": 166,
+            "screentime": 217
+          }
+        },
+        {
+          "date": "2023-02-09",
+          "mood": 0,
+          "daily": {
+            "sleep": 243,
+            "exercise": 167,
+            "screentime": 296
+          }
+        },
+        {
+          "date": "2023-02-20",
+          "mood": 1,
+          "daily": {
+            "sleep": 222,
+            "exercise": 209,
+            "screentime": 163
+          }
+        },
+        {
+          "date": "2023-02-28",
+          "mood": 1,
+          "daily": {
+            "sleep": 326,
+            "exercise": 123,
+            "screentime": 291
+          }
+        },
+        {
+          "date": "2023-02-19",
+          "mood": 0,
+          "daily": {
+            "sleep": 139,
+            "exercise": 187,
+            "screentime": 227
+          }
+        },
+        {
+          "date": "2023-02-22",
+          "mood": 1,
+          "daily": {
+            "sleep": 165,
+            "exercise": 195,
+            "screentime": 210
+          }
+        },
+        {
+          "date": "2023-02-12",
+          "mood": -1,
+          "daily": {
+            "sleep": 296,
+            "exercise": 179,
+            "screentime": 212
+          }
+        },
+        {
+          "date": "2023-02-22",
+          "mood": 1,
+          "daily": {
+            "sleep": 183,
+            "exercise": 113,
+            "screentime": 242
+          }
+        },
+        {
+          "date": "2023-02-15",
+          "mood": 1,
+          "daily": {
+            "sleep": 210,
+            "exercise": 184,
+            "screentime": 278
+          }
+        },
+        {
+          "date": "2023-02-22",
+          "mood": -1,
+          "daily": {
+            "sleep": 164,
+            "exercise": 202,
+            "screentime": 162
+          }
+        },
+        {
+          "date": "2023-02-12",
+          "mood": 0,
+          "daily": {
+            "sleep": 159,
+            "exercise": 116,
+            "screentime": 257
+          }
+        },
+        {
+          "date": "2023-02-17",
+          "mood": 1,
+          "daily": {
+            "sleep": 273,
+            "exercise": 172,
+            "screentime": 312
+          }
+        },
+        {
+          "date": "2023-02-16",
+          "mood": 0,
+          "daily": {
+            "sleep": 347,
+            "exercise": 172,
+            "screentime": 266
+          }
+        },
+        {
+          "date": "2023-02-27",
+          "mood": 1,
+          "daily": {
+            "sleep": 296,
+            "exercise": 204,
+            "screentime": 207
+          }
+        },
+        {
+          "date": "2023-02-03",
+          "mood": 0,
+          "daily": {
+            "sleep": 121,
+            "exercise": 133,
+            "screentime": 211
+          }
+        },
+        {
+          "date": "2023-02-25",
+          "mood": 1,
+          "daily": {
+            "sleep": 339,
+            "exercise": 155,
+            "screentime": 212
+          }
+        },
+        {
+          "date": "2023-02-09",
+          "mood": 0,
+          "daily": {
+            "sleep": 293,
+            "exercise": 111,
+            "screentime": 176
+          }
+        },
+        {
+          "date": "2023-02-17",
+          "mood": 0,
+          "daily": {
+            "sleep": 126,
+            "exercise": 156,
+            "screentime": 260
+          }
+        },
+        {
+          "date": "2023-02-02",
+          "mood": -1,
+          "daily": {
+            "sleep": 137,
+            "exercise": 121,
+            "screentime": 223
+          }
+        }
+      ]
+    },
+    {
+      "name": "Hines Case",
+      "baseline": {
+        "sleep": 480,
+        "exercise": 120,
+        "screentime": 270
+      },
+      "history": [
+        {
+          "date": "2023-03-01",
+          "mood": -1,
+          "daily": {
+            "sleep": 374,
+            "exercise": 61,
+            "screentime": 283
+          }
+        },
+        {
+          "date": "2023-02-13",
+          "mood": 0,
+          "daily": {
+            "sleep": 536,
+            "exercise": 166,
+            "screentime": 280
+          }
+        },
+        {
+          "date": "2023-02-17",
+          "mood": 0,
+          "daily": {
+            "sleep": 405,
+            "exercise": 160,
+            "screentime": 239
+          }
+        },
+        {
+          "date": "2023-02-08",
+          "mood": -1,
+          "daily": {
+            "sleep": 474,
+            "exercise": 63,
+            "screentime": 214
+          }
+        },
+        {
+          "date": "2023-02-01",
+          "mood": -1,
+          "daily": {
+            "sleep": 527,
+            "exercise": 81,
+            "screentime": 183
+          }
+        },
+        {
+          "date": "2023-03-01",
+          "mood": -1,
+          "daily": {
+            "sleep": 420,
+            "exercise": 85,
+            "screentime": 213
+          }
+        },
+        {
+          "date": "2023-02-08",
+          "mood": 0,
+          "daily": {
+            "sleep": 535,
+            "exercise": 76,
+            "screentime": 227
+          }
+        },
+        {
+          "date": "2023-02-15",
+          "mood": 0,
+          "daily": {
+            "sleep": 522,
+            "exercise": 84,
+            "screentime": 296
+          }
+        },
+        {
+          "date": "2023-02-09",
+          "mood": 0,
+          "daily": {
+            "sleep": 551,
+            "exercise": 121,
+            "screentime": 305
+          }
+        },
+        {
+          "date": "2023-02-02",
+          "mood": -1,
+          "daily": {
+            "sleep": 395,
+            "exercise": 107,
+            "screentime": 343
+          }
+        },
+        {
+          "date": "2023-02-14",
+          "mood": -1,
+          "daily": {
+            "sleep": 592,
+            "exercise": 103,
+            "screentime": 185
+          }
+        },
+        {
+          "date": "2023-02-16",
+          "mood": 1,
+          "daily": {
+            "sleep": 408,
+            "exercise": 167,
+            "screentime": 218
+          }
+        },
+        {
+          "date": "2023-02-13",
+          "mood": 0,
+          "daily": {
+            "sleep": 562,
+            "exercise": 103,
+            "screentime": 302
+          }
+        },
+        {
+          "date": "2023-02-06",
+          "mood": 1,
+          "daily": {
+            "sleep": 362,
+            "exercise": 148,
+            "screentime": 206
+          }
+        },
+        {
+          "date": "2023-02-16",
+          "mood": 0,
+          "daily": {
+            "sleep": 525,
+            "exercise": 141,
+            "screentime": 359
+          }
+        },
+        {
+          "date": "2023-02-08",
+          "mood": 0,
+          "daily": {
+            "sleep": 443,
+            "exercise": 100,
+            "screentime": 339
+          }
+        },
+        {
+          "date": "2023-02-06",
+          "mood": 1,
+          "daily": {
+            "sleep": 397,
+            "exercise": 178,
+            "screentime": 343
+          }
+        },
+        {
+          "date": "2023-02-10",
+          "mood": -1,
+          "daily": {
+            "sleep": 514,
+            "exercise": 122,
+            "screentime": 206
+          }
+        },
+        {
+          "date": "2023-02-14",
+          "mood": -1,
+          "daily": {
+            "sleep": 593,
+            "exercise": 72,
+            "screentime": 306
+          }
+        },
+        {
+          "date": "2023-02-16",
+          "mood": 0,
+          "daily": {
+            "sleep": 370,
+            "exercise": 119,
+            "screentime": 221
+          }
+        },
+        {
+          "date": "2023-02-06",
+          "mood": 1,
+          "daily": {
+            "sleep": 479,
+            "exercise": 73,
+            "screentime": 355
+          }
+        },
+        {
+          "date": "2023-02-11",
+          "mood": 1,
+          "daily": {
+            "sleep": 568,
+            "exercise": 155,
+            "screentime": 252
+          }
+        },
+        {
+          "date": "2023-02-26",
+          "mood": 1,
+          "daily": {
+            "sleep": 406,
+            "exercise": 172,
+            "screentime": 351
+          }
+        },
+        {
+          "date": "2023-02-10",
+          "mood": -1,
+          "daily": {
+            "sleep": 512,
+            "exercise": 114,
+            "screentime": 235
+          }
+        },
+        {
+          "date": "2023-02-22",
+          "mood": 1,
+          "daily": {
+            "sleep": 412,
+            "exercise": 108,
+            "screentime": 303
+          }
+        },
+        {
+          "date": "2023-02-23",
+          "mood": -1,
+          "daily": {
+            "sleep": 492,
+            "exercise": 139,
+            "screentime": 237
+          }
+        },
+        {
+          "date": "2023-02-09",
+          "mood": 0,
+          "daily": {
+            "sleep": 516,
+            "exercise": 129,
+            "screentime": 235
+          }
+        },
+        {
+          "date": "2023-02-27",
+          "mood": 0,
+          "daily": {
+            "sleep": 457,
+            "exercise": 112,
+            "screentime": 280
+          }
+        },
+        {
+          "date": "2023-02-24",
+          "mood": 1,
+          "daily": {
+            "sleep": 593,
+            "exercise": 93,
+            "screentime": 270
+          }
+        },
+        {
+          "date": "2023-02-25",
+          "mood": 1,
+          "daily": {
+            "sleep": 537,
+            "exercise": 169,
+            "screentime": 270
+          }
+        }
+      ]
     }
-]
+  ]
