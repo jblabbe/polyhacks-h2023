@@ -1,6 +1,6 @@
 import { Div, Header } from '../Layout'
 import Box from '@mui/material/Box'
-import React from 'react';
+import React, { useState } from 'react';
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -58,14 +58,25 @@ export const data = {
 
 export function Dashboard(props) {
 
+    const [sleepAvg, setSleepAvg] = useState(0);
+    const [screenAvg, setScreenAvg] = useState(0);
+    const [exerciseAvg, setExerciseAvg] = useState(0);
+
     function getUserData() {
         fetch("http://localhost:5000/user/61a28182-a514-11ed-9576-ee2e98f108a9")
             .then((response) => response.json())
-            .then((data) => console.log(data))
+            .then((data) => {
+                setSleepAvg(data.baseline.sleep);
+                setScreenAvg(data.baseline.screentime);
+                setExerciseAvg(data.baseline.exercise)
+            })
     }
 
     return (
         <>
+            <p>{sleepAvg}</p>
+            <p>{screenAvg}</p>
+            <p>{exerciseAvg}</p>
             <button onClick={() => getUserData()}>fetch!</button>
             <Box sx={{ display: "flex" }}>
                 <Box sx={{ display: "flex", flexDirection: "column" }}>
