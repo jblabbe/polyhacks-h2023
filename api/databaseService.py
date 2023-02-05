@@ -15,6 +15,13 @@ def createUser(user):
 def updateUser(id, user):
     users.replace_one({ "id": id }, user)
 
+def getUsersNames():
+    response = users.find({}, {"_id": 0, "name": 1})
+    names = []
+    for user in response:
+        names.append(user["name"])
+
+    return names
 # def getHistory(id):
 #     return users.find_one({ "id": id }, { "history": 1 })
 
