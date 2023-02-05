@@ -7,7 +7,7 @@ client = pymongo.MongoClient(f"mongodb+srv://{user}:{password}@cluster0.4pbnql3.
 users = client["moody"].get_collection("users")
 
 def getUser(id):
-    return users.find_one({ "id": id })
+    return users.find_one({ "id": id }, { "_id": 0 })
 
 def createUser(user):
     users.insert_one(user)
