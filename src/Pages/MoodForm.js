@@ -1,4 +1,4 @@
-import { Header, Div } from '../Layout'
+import { Div } from '../Layout'
 import { useState } from 'react'
 import Slider from '@mui/material/Slider'
 import Button from '@mui/material/Button'
@@ -19,8 +19,33 @@ export function MoodForm(props) {
 
   function selectSliders() {
     props.sliderChanger([sleepValue, exerciseValue, screenTimeValue]);
+    let id = "11e416b1-a52d-11ed-a0db-ee2e98f108a9";
+    processData(id, props.mood, sleepValue, exerciseValue, screenTimeValue);
     props.stateChanger("dashboard");
-}
+  }
+
+  function processData(id, mood, sleep, exercise, screenTime) {
+    const body = JSON.stringify({
+      "date": new Date().toLocaleDateString('fr-CA'),
+      "mood": 1,
+      "daily": {
+        "sleep": sleep,
+        "exercise": exercise,
+        "screentime": screenTime
+      }
+    });
+
+    fetch(`http://localhost:5000/history/${id}`, {
+      method: "POST",
+      mode: "cors",
+      headers: {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      body: body
+    })
+    .then(response => response.json())
+  }
 
   return (
     <div height="100%" >

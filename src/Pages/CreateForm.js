@@ -12,9 +12,42 @@ export function CreateForm(props) {
   let baselineExercise = "";
   let baselineScreentime = "";
   
+  function processInput() {
+    let form = document.getElementById("user-data");
+
+    let body = JSON.stringify({
+      "name": form.name.value,
+      "actions": {
+        "sleep": 0,
+        "exercise": 0,
+        "screentime": 0
+      },
+      "baseline": {
+        "sleep": form.sleep.value,
+        "exercise": form.exercise.value,
+        "screentime": form.screentime.value
+      },
+      "history": []
+    });
+
+    fetch("http://localhost:5000/user", {
+      method: "POST",
+      mode: "cors",
+      headers: {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      body: body
+    })
+    .then(response => response.json())
+    .then(data => console.log(data));
+
+    props.stateChanger("moodSmiley");
+  }
+
   return (
     <>
-    <form onSubmit={() => { 
+    <form id="user-data" onSubmit={() => { 
       props.stateChanger("moodSmiley");
       props.userNameChanger(tempName); 
       props.baselineChanger([baselineSleep, baselineExercise, baselineScreentime])
@@ -22,21 +55,21 @@ export function CreateForm(props) {
       <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100%", gap: "1em", padding: "0.5em"}}>
         <label>Enter your name:</label>
         <Box>
-          <input type="text" onChange={(e) => tempName = e.target.value}></input>
+          <input id="name" name="name" type="text" onChange={(e) => tempName = e.target.value}></input>
         </Box>
         <label>Enter your average sleep time in a day (Hours):</label>
         <Box>
-          <input type="text" onChange={(e) => baselineSleep = convertToMinutes(e.target.value)}></input><br></br>
+          <input id="sleep" name="sleep" type="text" onChange={(e) => baselineSleep = convertToMinutes(e.target.value)}></input><br></br>
         </Box>
         <label>Enter your average exercise time in a day (Hours):</label>
         <Box>
-          <input type="text" onChange={(e) => baselineExercise = convertToMinutes(e.target.value)}></input><br></br>
+          <input id="exercise" name="exercise" type="text" onChange={(e) => baselineExercise = convertToMinutes(e.target.value)}></input><br></br>
         </Box>
         <label>Enter your average screen time in a day (Hours):</label>
         <Box>
-          <input type="text" onChange={(e) => baselineScreentime = convertToMinutes(e.target.value)}></input><br></br>
+          <input id="screentime" name="screentime" type="text" onChange={(e) => baselineScreentime = convertToMinutes(e.target.value)}></input><br></br>
         </Box>
-        <input type="submit" value="Create"></input>
+        <input type="submit" value="Create" onClick={() => { processInput(); }}></input>
       </Box>
     </form>
     </>
