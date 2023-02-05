@@ -1,0 +1,17 @@
+import { Avatar } from "@mui/material";
+import { Div } from '../Layout'
+import Box from '@mui/material/Grid';
+
+export function Header(props) {
+
+    return (
+        <Box sx={{height: "10%", display: "flex", alignItems: "center", justifyContent: "end", background: "#EFEFEF"}}>
+            <Box sx={{display: "flex", flexDirection: "row", alignItems: "center", padding: "1em"}}>
+                <Avatar onClick={() => props.stateChanger("dashboard")} style={{ cursor: "pointer", marginRight: "0.5em" }}></Avatar>
+                {props.userName}
+            </Box>
+        </Box >
+    )
+}
+
+export default Header
