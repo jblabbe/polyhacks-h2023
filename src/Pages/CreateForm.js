@@ -2,6 +2,7 @@ import { Header, Div } from '../Layout'
 import Slider from '@mui/material/Slider'
 import Button from '@mui/material/Button'
 import Box from '@mui/material/Box'
+import { ClassNames } from '@emotion/react';
 
 export function CreateForm(props) {
 
@@ -47,31 +48,33 @@ export function CreateForm(props) {
 
   return (
     <>
-    <form id="user-data" onSubmit={() => { 
-      props.stateChanger("moodSmiley");
-      props.userNameChanger(tempName); 
-      props.baselineChanger([baselineSleep, baselineExercise, baselineScreentime])
-    }}>
-      <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100%", gap: "1em", padding: "0.5em"}}>
-        <label>Enter your name:</label>
-        <Box>
-          <input id="name" name="name" type="text" onChange={(e) => tempName = e.target.value}></input>
-        </Box>
-        <label>Enter your average sleep time in a day (Hours):</label>
-        <Box>
-          <input id="sleep" name="sleep" type="text" onChange={(e) => baselineSleep = convertToMinutes(e.target.value)}></input><br></br>
-        </Box>
-        <label>Enter your average exercise time in a day (Hours):</label>
-        <Box>
-          <input id="exercise" name="exercise" type="text" onChange={(e) => baselineExercise = convertToMinutes(e.target.value)}></input><br></br>
-        </Box>
-        <label>Enter your average screen time in a day (Hours):</label>
-        <Box>
-          <input id="screentime" name="screentime" type="text" onChange={(e) => baselineScreentime = convertToMinutes(e.target.value)}></input><br></br>
-        </Box>
-        <input type="submit" value="Create" onClick={() => { processInput(); }}></input>
+      <Box className="background">
+        <form id="user-data" onSubmit={() => { 
+          props.stateChanger("moodSmiley");
+          props.userNameChanger(tempName); 
+          props.baselineChanger([baselineSleep, baselineExercise, baselineScreentime])
+        }}>
+          <Box id="container">
+            <Box className="field">
+              <label className="label">Enter your name:</label>
+              <input id="name" className="input" name="name" type="text" onChange={(e) => tempName = e.target.value}></input>
+            </Box>
+            <Box className="field">
+              <label className="label">Enter your average sleep time in a day (in hours):</label>
+              <input id="sleep" className="input" name="sleep" type="text" onChange={(e) => baselineSleep = convertToMinutes(e.target.value)}></input>
+            </Box>
+            <Box className="field">
+              <label className="label">Enter your average exercise time in a day (in hours):</label>
+              <input id="exercise" className="input" name="exercise" type="text" onChange={(e) => baselineExercise = convertToMinutes(e.target.value)}></input>
+            </Box>
+            <Box className="field">
+              <label className="label">Enter your average screen time in a day (in hours):</label>
+              <input id="screentime" className="input" name="screentime" type="text" onChange={(e) => baselineScreentime = convertToMinutes(e.target.value)}></input>
+            </Box>
+            <input className="submit-btn" type="submit" value="Create" onClick={() => { processInput(); }}></input>
+          </Box>
+        </form>
       </Box>
-    </form>
     </>
   )
 }

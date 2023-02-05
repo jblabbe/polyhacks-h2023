@@ -178,3 +178,59 @@ textarea:focus, input:focus{
 .slider-btn {
   width: 25%;
 }
+
+/* Ben : create page styling */
+
+.background {
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#user-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.label {
+  font-size: 15px;
+}
+
+.input {
+  width: 150px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submit-btn {
+  background-color: #456cec;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  margin-top: 10rem;
+  padding: 0 0.8rem 0 0.8rem;
+  width: 8rem;
+  margin: auto;
+}
