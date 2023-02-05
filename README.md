@@ -8,7 +8,7 @@ Navigate into cloned directory
 
 ``cd polyhacks-h2023``
 
-## Client setup
+## Server setup
 
 Create python venv
 
@@ -22,7 +22,7 @@ Install the server dependencies
 
 ``pip install -r requirements.txt``
 
-## Server setup
+## Client setup
 
 Navigate back to the root of the repo
 

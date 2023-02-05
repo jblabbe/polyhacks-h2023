@@ -55,6 +55,8 @@ def process_quadrant_analysis(df):
     response_dict = {
     }
 
+    means = means // 60 #Transformation to hours
+    
     for param in params_cols:
         response_dict[f'{param}_mean'] = means[param]
         response_dict[f'{param}_action'] = actions[f'{param}_action'].iloc[0]
