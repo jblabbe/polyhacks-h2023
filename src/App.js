@@ -14,7 +14,7 @@ export function App() {
   const [sliders, setSliders] = useState([]);
 
   return (
-    <div>
+    <div className='base-bg'>
       <Header padding="1em" stateChanger={setStatus} userName={userName} />
       <Box sx={{height: "90%"}}>
         {status === "login" && <Login stateChanger={setStatus} userNameChanger={setUserName}></Login>}
