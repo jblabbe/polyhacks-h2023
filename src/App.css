@@ -85,3 +85,47 @@ textarea:focus, input:focus{
 .avatar {
   color: white;
 }
+
+.smiley-box {
+  border-radius: 25px;
+}
+
+.smiley-box-good {
+  background-color: #26a334;
+}
+
+.smiley-box-good:hover {
+  background-color: #35cc47;
+}
+
+.smiley-box-good:not(:hover){
+  transition: 0.15s;
+  background-color: #26a334;
+}
+
+.smiley-box-neutral {
+  background-color: #959695;
+}
+
+.smiley-box-neutral:hover {
+  background-color: #b5b5b5
+}
+
+.smiley-box-neutral:not(:hover){
+  background-color: #959695;
+  transition: 0.15s;
+}
+
+.smiley-box-bad {
+  background-color: #c42727;
+}
+
+.smiley-box-bad:hover{
+  background-color: #ed5555;
+  transition: 0.15s;
+}
+
+.smiley-box-bad:not(:hover) { 
+  background-color: #c42727;
+  transition: 0.15s; 
+} 
