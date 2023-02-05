@@ -65,7 +65,7 @@ export function Dashboard(props) {
     const [screenTimeHistory, setScreenTimeHistory] = useState([]);
 
     function getUserData() {
-        fetch("http://localhost:5000/user/61a28182-a514-11ed-9576-ee2e98f108a9")
+        fetch("http://localhost:5000/user/7d61b425-a533-11ed-a068-ee2e98f108a9")
             .then((response) => response.json())
             .then((data) => {
                 setSleepAvg(data.baseline.sleep);
