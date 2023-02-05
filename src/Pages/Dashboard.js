@@ -79,7 +79,7 @@ export function Dashboard(props) {
 
                 let sleepArr = [];
                 dailys.forEach(element => {
-                    sleepArr.push(element.sleep)
+                    sleepArr.push(Math.round(element.sleep / 60))
                 });
                 setSleepHistory({
                     labels,
@@ -94,7 +94,7 @@ export function Dashboard(props) {
 
                 let exerciseArr = [];
                 dailys.forEach(element => {
-                    exerciseArr.push(element.exercise)
+                    exerciseArr.push(Math.round(element.exercise / 60))
                 })
                 setExerciseHistory({
                     labels,
@@ -109,7 +109,7 @@ export function Dashboard(props) {
 
                 let screenTimeArr = [];
                 dailys.forEach(element => {
-                    screenTimeArr.push(element.screentime)
+                    screenTimeArr.push(Math.round(element.screentime / 60))
                 })
                 setScreenTimeHistory({
                     labels,
