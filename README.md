@@ -36,7 +36,7 @@ Install the client dependencies
 
 In a first terminal start the server
 
-``npm serve``
+``npm run serve``
 
 ## Start the client
 
