@@ -4,7 +4,7 @@ Clone the repo
 
 ``git clone git@github.com:jblabbe/polyhacks-h2023.git``
 
-Change into cloned directory
+Navigate into cloned directory
 
 ``cd polyhacks-h2023``
 
@@ -30,7 +30,7 @@ Navigate back to the root of the repo
 
 Install the client dependencies
 
-```npm ci``
+``npm ci``
 
 ## Start the server
 
