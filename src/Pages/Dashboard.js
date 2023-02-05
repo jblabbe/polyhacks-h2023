@@ -58,10 +58,10 @@ export const data = {
 
 export function Dashboard(props) {
 
-
     function getUserData() {
         fetch("http://localhost:5000/user/61a28182-a514-11ed-9576-ee2e98f108a9")
-            .then((response) => console.log(response));
+            .then((response) => response.json())
+            .then((data) => console.log(data))
     }
 
     return (

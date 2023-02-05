@@ -10,8 +10,6 @@ export function MoodSmiley(props) {
         window.location.replace(".")
     }
 
-    
-
     return (
         <>
             <Box sx={{ display: "flex", justifyContent: "space-around", height: "100%", gap: "1em", padding: "0.5em" }}>
