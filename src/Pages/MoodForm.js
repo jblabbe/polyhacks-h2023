@@ -48,22 +48,25 @@ export function MoodForm(props) {
   }
 
   return (
-    <div height="100%" >
-      <Box sx={{display: "flex", flexDirection: "column", padding: "1em", alignItems: "center", justifyContent: "space-between", height: "80%"}}>
-        <Box sx={{width: sliderWidth, marginTop: gap}}>
+    <div className='slide-container'>
+      <Box className='slide-container' sx={{display: "flex", flexDirection: "column", padding: "1em", alignItems: "center", justifyContent: "space-between", height: "80%"}}>
+        <Box sx={{width: sliderWidth}}>
+          <p>How much sleep did you get last night ?</p>
           <Slider value={sleepValue} onChange={changeSleepValue}></Slider>
         </Box>
         <Box sx={{width: sliderWidth, marginTop: gap}}>
+          <p>How much did you exercise today ?</p>
           <Slider value={exerciseValue} onChange={changeExerciseValue}></Slider>
         </Box>
         <Box sx={{width: sliderWidth, marginTop: gap}}>
+          <p>How much time did you spend looking at a screen today ?</p>
           <Slider value={screenTimeValue} onChange={changeScreenTimeValue}></Slider>
         </Box>
       </Box>
 
-      <Div className="d-flex justify-content-between p-2">
-        <Button variant="contained" color="success" onClick={() => props.stateChanger("moodSmiley")}>Back</Button>
-        <Button variant="contained" color="success" onClick={() => { selectSliders(); }}>Next</Button>
+      <Div className="d-flex p-2 slider-buttons">
+        <Button className='slider-btn' variant="contained" onClick={() => props.stateChanger("moodSmiley")}>Back</Button>
+        <Button className='slider-btn' variant="contained" onClick={() => { selectSliders(); }}>Next</Button>
       </Div>
     </div>
   )

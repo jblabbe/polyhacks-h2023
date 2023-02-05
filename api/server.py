@@ -46,3 +46,7 @@ def addHistory(id):
     db.updateUser(id, user)
 
     return "200"
+
+@app.route('/users/names')
+def getUserNames():
+    return json.dumps(db.getUsersNames());

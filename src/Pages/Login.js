@@ -8,7 +8,12 @@ import { ClassNames } from '@emotion/react';
 
 export function Login(props) {
   
-  const existingUsers = ["JB", "Ben", "Hug", "Jac", "John"];
+  let existingUsers = [];
+
+  fetch("http://localhost:5000/users/names")
+  .then((response) => response.json())
+  .then((data) => existingUsers = data)
+
   const [showError, setShowError] = useState(false);
   let userName = "";
   return (
