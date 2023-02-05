@@ -50,13 +50,16 @@ export function MoodForm(props) {
   return (
     <div className='slide-container'>
       <Box className='slide-container' sx={{display: "flex", flexDirection: "column", padding: "1em", alignItems: "center", justifyContent: "space-between", height: "80%"}}>
-        <Box sx={{width: sliderWidth, marginTop: gap}}>
+        <Box sx={{width: sliderWidth}}>
+          <p>How much sleep did you get last night ?</p>
           <Slider value={sleepValue} onChange={changeSleepValue}></Slider>
         </Box>
         <Box sx={{width: sliderWidth, marginTop: gap}}>
+          <p>How much did you exercise today ?</p>
           <Slider value={exerciseValue} onChange={changeExerciseValue}></Slider>
         </Box>
         <Box sx={{width: sliderWidth, marginTop: gap}}>
+          <p>How much time did you spend looking at a screen today ?</p>
           <Slider value={screenTimeValue} onChange={changeScreenTimeValue}></Slider>
         </Box>
       </Box>
