@@ -8,14 +8,14 @@ import Box from '@mui/material/Box'
 export function App() {
 
   const [status, setStatus] = useState("login");
-  const [userName, setUserName] = useState("Default User");
+  const [userName, setUserName] = useState("");
   const [mood, setMood] = useState("");
   const [baselineStats, setBaseline] = useState([]);
   const [sliders, setSliders] = useState([]);
 
   return (
     <div>
-      <Header className="bg-primary" padding="1em" stateChanger={setStatus} userName={userName} />
+      <Header padding="1em" stateChanger={setStatus} userName={userName} />
       <Box sx={{height: "90%"}}>
         {status === "login" && <Login stateChanger={setStatus} userNameChanger={setUserName}></Login>}
         {status === "createForm" && <CreateForm stateChanger={setStatus} userNameChanger={setUserName} userNameValue={userName} baselineChanger={setBaseline}></CreateForm>}

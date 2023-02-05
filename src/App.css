@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+
+.background-gradient {
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+}
+
+.name-input-text {
+  width: 100%;
+  height: 50px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+
+.name-input-login {
+  width: 20%;
+  font-size: 1rem;
+  height: 2rem;
+  border-radius: 5px;
+  border: none;
+}
+
+select.name-input-login {
+  border: none;
+}
+
+.login-btn {
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.header-sx {
+  background-color: #456cec;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
